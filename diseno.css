@@ -1,0 +1,1234 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700;800&display=swap');/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Karla:wght@200;300;400;500;700;800&display=swap');/*Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Kanit&family=Karla:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');/*Titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');/*Titulo Salud Activa*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');/*navigation view*/
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');/*Ayuda Inteligente*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');/*Ayuda inteligente titulo*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');/* Ayuda inteligente /Contenido */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');/*Ayuda inteligente 2*/
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&display=swap');/*Perfil*/
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');/*Perfil normal*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');/*Bold Video y Titulos*/
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@500&display=swap');/* Recomendaciones AI */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');/* Subtitulos para section's */
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');/* Tabla alimentos */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');/*Titulo SeriesxRepeticiones*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');/* Texto Cargando Imagen Perfil */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');/* Titulo CardMusica */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /* Titulo Aprender */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap'); /* Recomendaciones Aprender */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');/* Etiquetas */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');/* Frace */
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap'); /* Nombre de perfil contact info */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); /* Saludo perfil */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap'); /* Datos perfil */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap'); /* Subtitulos de recomendaciones */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap'); /* Ecuaciones */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap'); /* Efect Upload Text */
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap'); /* Nombre pacientes */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap'); /* Fecha y hora */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap'); /* Karla (Product sans) bold */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap'); /* Karla (Product sans) medium */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Nombre del perfil */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap'); /* Contenido general */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Karla';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Karla';
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+:root{
+    --black-color:#494949;
+    --background-color:#FFFFFF;
+    --background-aprender: #efe7f1;
+    --background-datos:#9ac6d8;
+    --therthary-color:#F0F2F7;
+    --card-brown-color:#fff8f5;
+    --card-green-color:#d8e4cb;
+    --card-pick-color:#efdcf5;
+    --card-blue-color:#e3eefc;
+    --card-yellow-color: #f9f1d2;
+    --card-twoblue-color:#f8f9fa;
+    --neon-pulse-brown:#cecbc8;
+    --neon-pulse-pink:#fee0ca;
+    --neon-pulse-green:#dbefe4;
+    --neon-pulse-green-ai: linear-gradient(
+        to right,
+        rgb(80, 130, 238),
+        rgb(125, 121, 217),
+        rgb(141, 117, 209),
+        rgb(156, 113, 201),
+        rgb(174, 110, 175),
+        rgb(183, 109, 162),
+        rgb(188, 107, 154),
+        rgb(196, 106, 143),
+        rgb(212, 122, 144),
+        rgb(214, 101, 115));
+    --neon-pulse-pink-ai: rgb(182, 157, 175);
+    --neon-pulse-blue:#94c0ed;
+    --neon-pulse-blue_banner:#EDEFFE;
+    --neon-pulse-purple:#d7c6ec;
+    --rgba-navigation:rgba(238, 238, 238, 0.8);
+    --shadown-navigation: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --navigation-background:#202124;
+    --navigation-active:#c6ff00;
+    --navigation-text:#e6e3e3;
+    --back-ai:#EDEFFE;
+    --back-ai-perfil: #e5dff9;
+    --back-ai-portada:#709fde;
+    --back-ai-estilo-perfil:#d0e8d7;
+    --back-ai-tipo-perfil:#ffdbc9;
+    --icon-ai:#EA9854;
+    --text-ai:#B9839B;
+    --text-color-perfil:#5997bc;
+    --gradiant-ai:#a3b0ce79;
+    --gradiant-ai-green:#dae7c279;
+    --gradiant-ai-pink:  #ffc0cb6c;
+    --gradiant-red:#ca61438e;
+    --line-neon-perfil: #9d88eb;
+    --line-neon-perfil-explocion: #ffb8be;
+    --shimmer-efect:#5E8EEE;
+    --card-dialog: #f0f4f9;
+}
+body.dark-mode {
+    --black-color: #E8E7E7;
+    --background-color: #171616;
+    --background-aprender: #151018;
+    --background-datos:#1f2c35;
+    --therthary-color: #292929;
+    --card-brown-color: #463931;
+    --card-green-color: #313529;
+    --card-pick-color: #312735;
+    --card-blue-color:#1f2c35;
+    --card-twoblue-color:#243135;
+    --neon-pulse-brown: #3f3c3a;
+    --neon-pulse-pink:#302836;
+    --neon-pulse-green:#24271e;
+    --neon-pulse-green-ai: linear-gradient(
+        to right,
+        rgb(80, 130, 238),
+        rgb(125, 121, 217),
+        rgb(141, 117, 209),
+        rgb(156, 113, 201),
+        rgb(174, 110, 175),
+        rgb(183, 109, 162),
+        rgb(188, 107, 154),
+        rgb(196, 106, 143),
+        rgb(212, 122, 144),
+        rgb(214, 101, 115));
+    --neon-pulse-pink-ai: rgb(125, 121, 217); 
+    --neon-pulse-blue:#293a4b;
+    --neon-pulse-blue_banner:#293a4b;
+    --neon-pulse-purple: #2d2833;
+    --rgba-navigation:rgba(29, 29, 29, 0.8);
+    --shadown-navigation: 0 4px 8px rgba(255, 255, 255, 0.1);
+    --navigation-background:#2f2f30;
+    --navigation-active:#c6ff00;
+    --navigation-text:#E8E7E7;
+    --back-ai:#101524;
+    --back-ai-perfil: #201d30;
+    --back-ai-portada:#26354b;
+    --back-ai-estilo-perfil:#1f2e25;
+    --back-ai-tipo-perfil:#301a0d;
+    --icon-ai:#EB9854;
+    --text-ai:#A17CB9;
+    --text-color-perfil:#5997bc;
+    --gradiant-ai:#293a4b4f;
+    --gradiant-ai-green:#444b294f;
+    --gradiant-ai-pink:  #3a2b2e6c;
+    --gradiant-ai-red:#4b33294f;
+    --line-neon-perfil: #5b5768;
+    --line-neon-perfil-explocion: #ad7176;
+    --shimmer-efect:#4061a2;
+    --card-dialog: #282a2c;
+}
+
+/* --------------------------------------------------------------- Animaciones -------------------------------------------------------------*/
+
+/* Animación de pellizco y rebote */
+@keyframes pinchBounce {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }  /* Escala hacia arriba */
+    50% { transform: scale(0.9); }  /* Escala hacia abajo */
+    75% { transform: scale(1.05); } /* Rebote pequeño hacia arriba */
+    100% { transform: scale(1); }   /* Vuelve al tamaño original */
+}
+@keyframes neonPulseBlueandWhite {
+    0%, 100% {
+        box-shadow: 0 0 20px var(--neon-pulse-blue), 0 0 30px var(--neon-pulse-blue), 0 0 40px var(--neon-pulse-blue), 0 0 50px var(--neon-pulse-blue), 0 0 60px var(--neon-pulse-blue), 0 0 70px var(--neon-pulse-blue), 0 0 80px var(--neon-pulse-blue);
+    }
+    50% {
+        box-shadow: 0 0 30px var(--neon-pulse-blue), 0 0 40px var(--neon-pulse-blue), 0 0 50px var(--neon-pulse-blue), 0 0 60px var(--neon-pulse-blue), 0 0 70px var(--neon-pulse-blue), 0 0 80px var(--neon-pulse-blue), 0 0 90px var(--neon-pulse-blue);
+    }
+}
+
+@keyframes neonPulsePinkAI {
+    0%, 100% {
+        box-shadow: 0 0 20px var(--neon-pulse-pink-ai), 0 0 30px var(--neon-pulse-pink-ai), 0 0 40px var(--neon-pulse-pink-ai), 0 0 50px var(--neon-pulse-pink-ai), 0 0 60px var(--neon-pulse-pink-ai), 0 0 70px var(--neon-pulse-pink-ai), 0 0 80px var(--neon-pulse-pink-ai);
+    }
+    50% {
+        box-shadow: 0 0 30px var(--neon-pulse-pink-ai), 0 0 40px var(--neon-pulse-pink-ai), 0 0 50px var(--neon-pulse-pink-ai), 0 0 60px var(--neon-pulse-pink-ai), 0 0 70px var(--neon-pulse-pink-ai), 0 0 80px var(--neon-pulse-pink-ai), 0 0 90px var(--neon-pulse-pink-ai);
+    }
+}
+
+/* Efecto de neón azul */
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 10px var(--neon-pulse-green-ai), 0 0 20px var(--neon-pulse-green-ai), 0 0 30px var(--neon-pulse-green-ai);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--neon-pulse-green-ai), 0 0 40px var(--neon-pulse-green-ai), 0 0 60px var(--neon-pulse-green-ai);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--neon-pulse-green-ai), 0 0 20px var(--neon-pulse-green-ai), 0 0 30px var(--neon-pulse-green-ai);
+    }
+}
+
+.anim-pellizco {
+    animation: pellizco 0.5s ease-in-out forwards;
+    filter: blur(1.5rem);
+}
+
+@keyframes pellizco {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* General styling */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Animación de rotación 360º */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación de movimiento de alas */
+@keyframes flap {
+    0% {
+        transform: scaleX(1); /* Sin deformación */
+    }
+    50% {
+        transform: scaleX(0.9); /* Alas "cerradas" */
+    }
+    100% {
+        transform: scaleX(1); /* Vuelve a su estado original */
+    }
+}
+
+/* Animación de expansión */
+.animar-expansion {
+    animation: expandir 0.3s ease-in-out forwards;
+}
+
+@keyframes expandir {
+    from {
+        width: 50px;
+        height: 50px;
+    }
+    to {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Clase que se añadirá para la animación */
+.pinch-bounce {
+    animation: pinchBounce 0.5s ease-in-out;
+}
+
+.neon-glow {
+    filter: blur(0.5rem);
+    animation: neonGlow 3s ease-in-out;
+    /* Efecto de gradiente rosa pastel con sombras para simular el glow */
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5), 
+                0 0 20px rgba(255, 192, 203, 0.4), 
+                0 0 30px rgba(255, 105, 180, 0.3); 
+}
+
+/* Animacion para el content cardview */
+.pinch-bounce-card-content {
+    animation: pinchBounce 0.5s ease-in-out;
+}
+
+.neon-glow-card-content {
+    animation: neonGlow 5s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5), 
+                0 0 20px rgba(255, 192, 203, 0.4), 
+                0 0 30px rgba(255, 105, 180, 0.3); 
+}
+
+.neon-glow-pdf {
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5), 
+                0 0 20px rgba(255, 192, 203, 0.4), 
+                0 0 30px rgba(255, 105, 180, 0.3); 
+    animation: neonPulse 1.5s infinite;
+}
+  
+@keyframes neonPulse {
+    0%, 100% {
+      box-shadow: 0 0 10px var(--neon-pulse-blue), 0 0 20px var(--neon-pulse-blue), 0 0 30px var(--neon-pulse-blue);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--neon-pulse-blue), 0 0 40px var(--neon-pulse-blue), 0 0 60px var(--neon-pulse-blue);
+    }
+}
+
+/* --------------------------------------------------------------FloatingButton----------------------------------------------------*/
+/* Contenedor del switch */
+.switch-container {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Ancho del switch */
+    height: 34px; /* Altura del switch */
+}
+
+/* Estilo del checkbox oculto */
+.theme-switch {
+    display: none;
+}
+
+/* Estilo del label (envoltorio principal del switch) */
+.theme-switch-label {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Asegura que el track ocupe el ancho completo */
+    height: 100%; /* Altura total del contenedor */
+    cursor: pointer;
+}
+
+/* Estilo del track (fondo del switch) */
+.switch-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--black-color);
+    border-radius: 17px;
+    transition: background-color 0.3s;
+    z-index: 1; /* Coloca el track detrás del thumb */
+}
+
+/* Estilo del thumb (círculo deslizante) */
+.switch-thumb {
+    position: absolute;
+    top: 3px; /* Centra el thumb verticalmente */
+    left: 3px; /* Posición inicial del thumb */
+    width: 28px;
+    height: 28px;
+    background-color: var(--black-color);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s, background-color 0.3s;
+    z-index: 2; /* Coloca el thumb encima del track */
+}
+
+/* Estilo del track y thumb cuando está activado */
+.theme-switch:checked + .theme-switch-label .switch-track {
+    background-color: #a8c7fa; /* Color para el modo oscuro */
+}
+
+.theme-switch:checked + .theme-switch-label .switch-thumb {
+    left: calc(100% - 31px); /* Mueve el thumb al final del track */
+    background-color: #173566;
+}
+
+/* Hover en el switch */
+.switch-container:hover .switch-thumb {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.switch-thumb i {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Posicionamiento de los dos switches */
+.switches-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+
+/* Menu */  
+/* Estilo general para la imagen */
+.header-menu {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: var(--navigation-background);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 150px;  /* Ajusta según sea necesario */
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.nav__close, 
+.nav__toggle {
+  display: flex;
+  color: var(--black-color);
+  font-size: 4rem;
+  cursor: pointer;
+  border: 2px solid var(--black-color);
+  border-radius: 40px;
+  margin: 10px;
+  padding: 10px;
+  display: none;
+}
+  
+.nav__link {
+    position: relative;
+    color: var(--navigation-text);
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity .4s;
+    font-family: 'Fredoka';
+    text-align: none;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+  
+.nav__link i {
+    font-size: 2rem;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s, visibility .4s;
+}
+  
+.nav__link span {
+    position: relative;
+    transition: margin .4s;
+}
+  
+.nav__link span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: var(--navigation-active);
+    transition: width .4s ease-out;
+}
+  
+  /* Animation link on hover */
+.nav__link:hover span {
+    margin-left: 2.5rem;
+    background-color: var(--background-color);
+    color: var(--black-color); /* Cambia el color del texto */
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.nav__link:hover i {
+    opacity: 1;
+    visibility: visible;
+    color: var(--navigation-text);
+}
+  
+.nav__link:hover span::after {
+    width: 100%;
+}
+  
+  /* Sibling fade animation */
+.nav__list:has(.nav__link:hover) .nav__link:not(:hover) {
+    opacity: .4;
+}
+  
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}  
+
+/* Show menu */
+.show-menu {
+    left: 0;
+}
+  
+  /* Animation link when displaying menu */
+.show-menu .nav__item {
+    visibility: visible;
+    transform: translateX(0);
+}
+/*Seccion inicio*/
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/*-----------------------------------------------------Perfil---------------------------------------------------------------*/
+.perfil {
+    position: relative;
+    display: flex;
+    margin-top: 150px;
+}
+
+.perfil-container {
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    overflow: hidden; /* Asegura que los elementos no desborden el contenedor */
+    background-color: var(--back-ai);
+    border-radius: 50px;
+}
+
+/* Nombre principal */
+.nombre {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  margin: 10px 0;
+  color: var(--black-color);
+}
+
+/* Subtítulo */
+.subtitulo, .card-subtitle {
+  text-align: center;
+  font-family: 'ProductSansMedium', sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+  color: var(--black-color);
+}
+
+/* Contenido horizontal */
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Texto descriptivo */
+.descripcion {
+  flex: 1;
+  font-size: 18px;
+  margin: 20px;
+  text-align: justify;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--black-color);
+}
+
+/* Imagen del lado derecho */
+.mascara {
+    width: 450px; /* Ajusta el tamaño deseado */
+    height: 450px;
+    position: relative;
+    overflow: hidden; /* Asegura que no se vea nada fuera de los límites */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+.mascara img {
+    width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url('Imagenes/mascara_flor.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
+    -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
+    -webkit-mask-position: center; /* Centra la máscara */
+    mask-image: url('Imagenes/mascara_flor.png'); /* Máscara para otros navegadores compatibles */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+/**/
+
+/* ------------------------------------------------------------ Proyectos ------------------------------------------------------------ */
+
+.proyectos {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+
+.proyectos-container {
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    overflow: hidden; /* Asegura que los elementos no desborden el contenedor */
+    background-color: var(--back-ai-estilo-perfil);
+    border-radius: 40px;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px 10px;
+}
+
+/* Contenedor horizontal */
+.cards-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+/* Estilo de cada tarjeta */
+.card {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 600px;
+  background: rgba( 172, 206, 242, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.4px);
+    border: 1px solid var(--border-glassefect);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.card-salud-web{
+    flex: 0 0 auto;
+  width: 450px;
+  height: 600px;
+  background: rgba( 172, 206, 242, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.4px);
+    border: 1px solid var(--border-glassefect);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:active img {
+  transform: scale(1.1);
+}
+
+.card:active {
+  transform: scale(0.85);
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+/* Título */
+.card-title {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px 0;
+  color: var(--black-color);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Imagen */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 15px 0;
+  border-radius: 50px;
+}
+
+/* Texto */
+.card-text {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  color: var(--black-color);
+}
+
+/* ------------------------------------------------------------ Formacion ------------------------------------------------------- */
+.formacion {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+
+.formacion-container {
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    overflow: hidden; /* Asegura que los elementos no desborden el contenedor */
+    background-color: var(--back-ai-portada);
+    border-radius: 40px;
+}
+
+.mascara-cecyt {
+    width: 250px; /* Ajusta el tamaño deseado */
+    height: 250px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden; /* Asegura que no se vea nada fuera de los límites */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+.mascara-cecyt img {
+    width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url('Imagenes/mascara_montana.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
+    -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
+    -webkit-mask-position: center; /* Centra la máscara */
+    mask-image: url('Imagenes/mascara_montana.png'); /* Máscara para otros navegadores compatibles */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.mascara-cics {
+    width: 250px; /* Ajusta el tamaño deseado */
+    height: 250px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden; /* Asegura que no se vea nada fuera de los límites */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+.mascara-cics img {
+    width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url('Imagenes/mascara_pildora_version_dos.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
+    -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
+    -webkit-mask-position: center; /* Centra la máscara */
+    mask-image: url('Imagenes/mascara_pildora_version_dos.png'); /* Máscara para otros navegadores compatibles */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.mascara-unam {
+    width: 250px; /* Ajusta el tamaño deseado */
+    height: 250px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden; /* Asegura que no se vea nada fuera de los límites */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+.mascara-unam img {
+    width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
+    -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
+    -webkit-mask-position: center; /* Centra la máscara */
+    mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara para otros navegadores compatibles */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+/* ------------------------------------------------------------ Certificaciones ------------------------------------------------------ */
+
+.constancias {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+
+.constancias-container {
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    overflow: hidden; /* Asegura que los elementos no desborden el contenedor */
+    background-color: var(--back-ai-tipo-perfil);
+    border-radius: 40px;
+}
+
+.scroll-horizontal-constancias {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-horizontal-constancias::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.card-constancias {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 320px;
+  background-color: var(--therthary-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-vertical-constancias {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-horizontal-constancias {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.contenido-card-constancias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contenido-card-constancias h3 {
+  font-size: 1.1rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--black-color);
+}
+
+.imagen-secundaria-constancias {
+  width: 220px;
+  height: auto;
+  align-self: flex-start;
+}
+
+
+/* ------------------------------------------------------------ Sobre mi -------------------------------------------------------------*/
+
+.sobremi {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+
+.sobremi-container {
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    overflow: hidden; /* Asegura que los elementos no desborden el contenedor */
+    background-color: var(--back-ai-perfil);
+    border-radius: 40px;
+}
+
+.galeria-contenedor {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.texto-lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-lateral h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.texto-lateral p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.galeria-imagenes {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 180px;
+}
+
+.mascara-fotografia {
+    width: 100%; /* Ajusta el tamaño deseado */
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden; /* Asegura que no se vea nada fuera de los límites */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+.mascara-fotografia img {
+    width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url('Imagenes/mascara_flor_dos.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
+    -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
+    -webkit-mask-position: center; /* Centra la máscara */
+    mask-image: url('Imagenes/mascara_flor_dos.png'); /* Máscara para otros navegadores compatibles */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.mascara-musica {
+    width: 100%; /* Ajusta el tamaño deseado */
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden; /* Asegura que no se vea nada fuera de los límites */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+.mascara-musica img {
+    width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
+    -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
+    -webkit-mask-position: center; /* Centra la máscara */
+    mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara para otros navegadores compatibles */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.mascara-violin {
+    width: 100%; /* Ajusta el tamaño deseado */
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden; /* Asegura que no se vea nada fuera de los límites */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+.mascara-violin img {
+    width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url('Imagenes/mascara_gota.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
+    -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
+    -webkit-mask-position: center; /* Centra la máscara */
+    mask-image: url('Imagenes/mascara_gota.png'); /* Máscara para otros navegadores compatibles */
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+/* Imagen que ocupa 2 columnas (horizontal grande) */
+.grande-horizontal {
+  grid-column: span 2;
+  height: 260px;
+  border-radius: 180px;
+}
+
+/* Imagen que ocupa 2 filas (vertical grande) */
+.grande-vertical {
+  grid-row: span 2;
+}
+
+.lista-intereses {
+  font-family: 'ProductSansMedium', sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  color: var(--black-color);
+  text-align: justify;
+}
+
+.lista-intereses li {
+  margin-bottom: 0.5rem;
+}
+
+
+.texto-lateral {
+  text-align: center;
+  font-family: 'ProductSansMedium', sans-serif;
+  font-size: 16px;
+  margin: 10px 0;
+  color: var(--black-color);
+  text-align: justify;
+}
+
+/* -------------------------------------------------------------- Footer -------------------------------------------------------------*/
+
+.footer {
+  background-color: var(--navigation-background);
+  color: #dad8d8;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-social a {
+  color: var(--black-color);
+  font-size: 1.6rem;
+  background-color: #dad8d8;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+  background-color: #777;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50px;
+  background-color: #aaa;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.footer-copy p {
+  font-size: 0.9rem;
+}
+
+
+/* ---------------------Adaptacion a pantallas-----------------*/
+/* Navigation for mobile devices */
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba( 172, 206, 242, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 9.5px );
+        -webkit-backdrop-filter: blur( 9.4px);
+        border: 1px solid var(--border-glassefect);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 6rem 3.5rem;
+        transition: left 0.4s ease;
+        overflow-y: auto; /* Evita que las opciones salgan fuera */
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .logo{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 2rem; /* Espaciado entre opciones */
+    }
+
+    .show-menu {
+        left: 0;
+    }
+
+    .nav__toggle, 
+    .nav__close {
+        display: flow-root;
+        background-color: rgba(0,0,0,0.05);
+        transition: var(--background-color) 0.3s, transform 0.3s;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .nav__toggle i, 
+    .nav__close i {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .nav__toggle:hover,
+    .nav__close:hover {
+    background-color: var(--navigation-active);
+    transform: scale(1.1);
+    }
+
+    .nav__item {
+        transform: translateY(40px);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .show-menu .nav__item {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav__link span {
+        font-size: 50px;
+    }
+
+    .nav__link:hover span {
+        font-size: 60px;
+    }
+
+    /* Seccion sobre mi */
+    .galeria-contenedor, .galeria-imagenes {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+  .nav__link i {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+}

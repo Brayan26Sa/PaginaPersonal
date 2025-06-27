@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.5.22/dist/jspdf.plugin.autotable.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- Fuentes -->
+        <script src="fuentes/IBM_Plex_Mono.js"></script>
+        <!-- Favicon -->
+        <link rel="icon" href="Imagenes/logotipo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="diseno.css">
+        <!-- Firebase SDKs -->
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>        
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+        <!-- Archivo JavaScript -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Lottie file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" 
+            integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Santos Arroyo Brayan</title>
+    </head>
+    <body>
+        <!--Switch estilo Material You-->
+        <div class="switches-wrapper">
+
+            <div class="switch-container">
+                <input type="checkbox" id="themeSwitch" class="theme-switch" />
+                <label for="themeSwitch" class="theme-switch-label">
+                    <span class="switch-track"></span>
+                    <span class="switch-thumb">
+                        <i class="ri-moon-line"></i>
+                    </span>
+                </label>
+            </div>
+
+            <div class="switch-container">
+                <input type="checkbox" id="langSwitch" class="theme-switch" />
+                <label for="langSwitch" class="theme-switch-label">
+                    <span class="switch-track"></span>
+                    <span class="switch-thumb">
+                        <i class="ri-translate-2"></i>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <!--Menu encabezado-->  
+        <header class="header-menu" id="header-menu">
+            <nav class="nav container">
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!-- Logo separado de las opciones -->
+                        <div class="logo">
+                            <a href="#">
+                                <img src="Imagenes/logo_secundario_pagina_web_profesional.png" alt="Logo Era Salud Activa" class="logo-img">
+                            </a>
+                        </div>
+
+                        <li class="nav__item">
+                            <a href="#perfil" class="nav__link">
+                                <i class="ri-home-fill"></i>
+                                <span class="lang" data-es="Inicio" data-en="Home">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#proyectos" class="nav__link">
+                                <i class="ri-terminal-box-fill"></i>
+                                <span class="lang" data-es="Proyectos" data-en="Projects">Proyectos</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#formacion" class="nav__link">
+                                <i class="ri-school-fill"></i>
+                                <span class="lang" data-es="Formación" data-en="Education">Formación</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#constancias" class="nav__link">
+                                <i class="ri-graduation-cap-fill"></i>
+                                <span class="lang" data-es="Certificaciones" data-en="Certificates">Certificaciones</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#sobremi" class="nav__link">
+                                <i class="ri-user-5-fill"></i>
+                                <span class="lang" data-es="Más sobre mí" data-en="About Me">Más sobre mí</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                </div>
+                
+                
+            </nav>
+        </header>
+        <!--Perfil-->  
+        <section id="perfil" class="perfil">
+            <div class="perfil-container">
+                <h1 class="nombre">Brayan Santos Arroyo</h1>
+                <h2 class="subtitulo lang"
+                    data-es="Lic. en Nutrición en formación"
+                    data-en="Nutrition Student in Training">
+                    Lic. en Nutrición en formación
+                </h2>
+
+                <div class="contenido">
+                    <p class="descripcion lang"
+                        data-es="Hola, soy Brayan Santos Arroyo. Me estoy formando con dedicación como Licenciado en Nutrición en el IPN y como profesional de Computación en la UNAM. Esta combinación de pasiones me ha impulsado a crear ‘Salud Activa’, mi plataforma digital con la que busco hacer la nutrición y el entrenamiento de calidad más accesibles. Actualmente, estoy en una fase de consolidación profesional y ofrezco mis servicios de planes alimenticios y de entrenamiento a un costo muy accesible, siempre con la máxima transparencia y el compromiso de acompañarte hacia un estilo de vida más saludable. Juntos lograremos llegar a tu meta."
+                        data-en="Hi, I'm Brayan Santos Arroyo. I'm currently training as a Nutritionist at IPN and also pursuing a degree in Computer Science at UNAM. This blend of passions led me to create ‘Salud Activa’, my digital platform aimed at making quality nutrition and training more accessible. I'm in a phase of professional development, offering nutritional and workout plans at a very accessible cost — always with full transparency and a strong commitment to helping you achieve a healthier lifestyle. Together we’ll reach your goal.">
+                        Hola, soy Brayan Santos Arroyo. Me estoy formando con dedicación como Licenciado en Nutrición en el IPN y como profesional de Computación en la UNAM. Esta combinación de pasiones me ha impulsado a crear ‘Salud Activa’, mi plataforma digital con la que busco hacer la nutrición y el entrenamiento de calidad más accesibles. Actualmente, estoy en una fase de consolidación profesional y ofrezco mis servicios de planes alimenticios y de entrenamiento a un costo muy accesible, siempre con la máxima transparencia y el compromiso de acompañarte hacia un estilo de vida más saludable. Juntos lograremos llegar a tu meta.
+                    </p>
+
+                    <div class="mascara">
+                     <img id="idIVPerfil" src="Imagenes/imagen_perfil_profesional.jpg" alt="Imagen de perfil">
+                    </div> 
+
+                </div>
+            </div>
+        </section>
+        <!--Proyectos-->
+        <section id="proyectos" class="proyectos">
+    
+            <div class="proyectos-container">
+                <h1 class="nombre lang" data-es="Proyectos" data-en="Projects">Proyectos</h1>
+                <div class="scroll-container">
+                    <div class="cards-wrapper">
+
+                    <!-- Card 1 -->
+                    <a href="https://fittme-4b869.firebaseapp.com/" target="_blank" class="card-link">
+                        <div class="card">
+                        <h2 class="card-title lang"
+                            data-es="Salud Activa Web"
+                            data-en="Salud Activa Web">
+                            Salud Activa Web
+                        </h2>
+                        <img src="Imagenes/saludactiva_web.png" alt="Imagen Salud Activa Web" class="card-image">
+                        <p class="card-text lang"
+                            data-es="Accede a un centro de gestión personalizado donde puedes calcular tus macronutrientes, crear planes alimenticios a medida, diseñar tus rutinas de entrenamiento, y llevar un registro detallado de tus pesos cargados y tu progreso general. Todo esto, desde una interfaz intuitiva y accesible."
+                            data-en="Access a personalized management center where you can calculate your macronutrients, create tailored meal plans, design your workout routines, and keep a detailed record of your lifted weights and overall progress — all from an intuitive and accessible interface.">
+                            Accede a un centro de gestión personalizado donde puedes calcular tus macronutrientes, crear planes alimenticios a medida, diseñar tus rutinas de entrenamiento, y llevar un registro detallado de tus pesos cargados y tu progreso general. Todo esto, desde una interfaz intuitiva y accesible.
+                        </p>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <div class="card-salud-web">
+                    <h2 class="card-title lang"
+                        data-es="Salud Activa App (Android Beta)"
+                        data-en="Salud Activa App (Android Beta)">
+                        Salud Activa App (Android Beta)
+                    </h2>
+                    <img src="Imagenes/saludactiva_app.png" alt="Imagen Salud Activa App" class="card-image">
+                    <p class="card-text lang"
+                        data-es="Para que tu progreso te acompañe, la app te permite registrar entrenamientos, monitorizar tu frecuencia cardíaca y acceder a tus planes desde cualquier lugar. Comprometido con la transparencia, el código está disponible en GitHub y, al estar en fase beta, el registro de usuarios se gestiona de forma controlada."
+                        data-en="So your progress follows you, the app allows you to log workouts, monitor your heart rate, and access your plans from anywhere. Committed to transparency, the code is available on GitHub and, since it's in beta phase, user registration is managed in a controlled way.">
+                        Para que tu progreso te acompañe, la app te permite registrar entrenamientos, monitorizar tu frecuencia cardíaca y acceder a tus planes desde cualquier lugar. Comprometido con la transparencia, el código está disponible en GitHub y, al estar en fase beta, el registro de usuarios se gestiona de forma controlada.
+                    </p>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Formacion-->
+        <section id="formacion" class="formacion">
+            <div class="formacion-container">
+                <h1 class="nombre lang" data-es="Formación" data-en="Education">Formación</h1>
+                <div class="scroll-container">
+                    <div class="cards-wrapper">
+
+                    <!-- Card 1 -->
+                    <a href="https://www.ipn.mx/" target="_blank" class="card-link">
+                        <div class="card">
+                        <h2 class="card-title lang"
+                            data-es="Instituto Politécnico Nacional (IPN)"
+                            data-en="National Polytechnic Institute (IPN)">
+                            Instituto Politécnico Nacional (IPN)
+                        </h2>
+                        <h1 class="card-subtitle lang"
+                            data-es="Centro de Estudios Científicos y Tecnológicos No° 8"
+                            data-en="Center for Scientific and Technological Studies No. 8">
+                            Centro de Estudios Científicos y Tecnológicos No° 8
+                        </h1>
+                        <div class="mascara-cecyt">
+                        <img src="Imagenes/preparatoria.jpg" alt="Imagen de perfil">
+                        </div> 
+                        <p class="card-text lang"
+                            data-es="Técnico en computación | 2018 - 2021"
+                            data-en="Computer Technician | 2018 - 2021">
+                            Técnico en computación | 2018 - 2021
+                        </p>
+                        </div>
+                    </a>
+                    
+                    <!-- Card 2 -->
+                    <a href="https://www.ipn.mx/" target="_blank" class="card-link">
+                        <div class="card">
+                        <h2 class="card-title lang"
+                            data-es="Instituto Politécnico Nacional (IPN)"
+                            data-en="National Polytechnic Institute (IPN)">
+                            Instituto Politécnico Nacional (IPN)
+                        </h2>
+
+                        <h1 class="card-subtitle lang"
+                            data-es="Centro Interdisciplinario de Ciencias de la Salud"
+                            data-en="Interdisciplinary Center for Health Sciences">
+                            Centro Interdisciplinario de Ciencias de la Salud
+                        </h1>
+                        <div class="mascara-cics">
+                        <img src="Imagenes/universidad_dos.jpg" alt="Imagen de perfil">
+                        </div> 
+                        <p class="card-text lang"
+                            data-es="Licenciatura en Nutrición"
+                            data-en="Bachelor’s Degree in Nutrition">
+                            Licenciatura en Nutrición
+                        </p>
+                        </div>
+                    </a>
+                    
+                    <!-- Card 3 -->
+                    <a href="https://www.unam.mx/" target="_blank" class="card-link">
+                        <div class="card">
+                        <h2 class="card-title lang"
+                            data-es="Universidad Nacional Autónoma de México (UNAM)"
+                            data-en="National Autonomous University of Mexico (UNAM)">
+                            Universidad Nacional Autónoma de México (UNAM)
+                        </h2>
+
+                        <h1 class="card-subtitle lang"
+                            data-es="Facultad de Estudios Superiores"
+                            data-en="School of Higher Studies">
+                            Facultad de Estudios Superiores
+                        </h1>
+                        <div class="mascara-unam">
+                        <img src="Imagenes/universidad_uno.jpg" alt="Imagen de perfil">
+                        </div> 
+                        <p class="card-text lang"
+                            data-es="Licenciatura en Computación"
+                            data-en="Bachelor’s Degree in Computer Science">
+                            Licenciatura en Computación
+                        </p>
+                        </div>
+                    </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Constancias-->
+        <section id="constancias" class="constancias">
+            <div class="constancias-container">
+                <h1 class="nombre lang" data-es="Certificaciones" data-en="Certificates">Certificaciones</h1>
+                <div class="scroll-horizontal-constancias">
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_udemy.png" alt="Udemy" class="logo-vertical-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Aprendiendo Python desde 0"
+                            data-en="Learning Python from Scratch">
+                            Aprendiendo Python desde 0
+                        </h3>
+                        <img src="imagenes/phyton_curso.png" alt="Python" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_udemy.png" alt="Udemy" class="logo-vertical-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Creando un app en Android Studio con Kotlin"
+                            data-en="Creating an Android App with Kotlin">
+                            Creando un app en Android Studio con Kotlin
+                        </h3>
+                        <img src="imagenes/kotlin_curso.png" alt="Kotlin + Android" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_udemy.png" alt="Udemy" class="logo-vertical-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Aprendiendo HTML, CSS y JS desde 0."
+                            data-en="Learning HTML, CSS, and JS from Scratch">
+                            Aprendiendo HTML, CSS y JS desde 0.
+                        </h3>
+                        <img src="imagenes/hmtl_curso.png" alt="Kotlin + Android" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_unam.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Congreso Internacional de AI: Retos y oportunidades"
+                            data-en="International AI Congress: Challenges and Opportunities">
+                            Congreso Internacional de AI: Retos y oportunidades
+                        </h3>
+                        <img src="imagenes/ai_curso.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_unam.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Jueces de Fisicoconstructivismo"
+                            data-en="Bodybuilding Judges">
+                            Jueces de Fisicoconstructivismo
+                        </h3>
+                        <img src="imagenes/fisicoculturismo_curso.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_ops.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Prevención de la autolesión y el suicidio: Atención primaria de salud"
+                            data-en="Prevention of Self-Harm and Suicide: Primary Health Care">
+                            Prevención de la autolesión y el suicidio: Atención primaria de salud
+                        </h3>
+                        <img src="imagenes/psicologia_curso.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_uaem.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="1er Congreso Virtual de Nutrición en el Paciente Oncológico"
+                            data-en="1st Virtual Congress on Nutrition in Oncology Patients">
+                            1er Congreso Virtual de Nutrición en el Paciente Oncológico
+                        </h3>
+                        <img src="imagenes/oncologia_curso.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_ipn.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Alimentos funcionales: El caso de la malagra y suero de leche."
+                            data-en="Functional Foods: The Case of Malagra and Whey.">
+                            Alimentos funcionales: El caso de la malagra y suero de leche.
+                        </h3>
+                        <img src="imagenes/nutricion_cursos.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_ipn.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Luteína, bienestar y cadenas de valor."
+                            data-en="Lutein, Well-being, and Value Chains">
+                            Luteína, bienestar y cadenas de valor.
+                        </h3>
+                        <img src="imagenes/nutricion_cursos.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_ipn.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Huellas genómicas bacterianas y sus implicaciones gástricas."
+                            data-en="Bacterial Genomic Fingerprints and Gastric Implications">
+                            Huellas genómicas bacterianas y sus implicaciones gástricas.
+                        </h3>
+                        <img src="imagenes/nutricion_cursos.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+
+                    <div class="card-constancias">
+                        <img src="imagenes/logotipo_ipn.png" alt="UNAM" class="logo-horizontal-constancias">
+                        <div class="contenido-card-constancias">
+                        <h3 class="lang"
+                            data-es="Plantas medicinales en el tratamiento de COVID – 19."
+                            data-en="Medicinal Plants in the Treatment of COVID-19">
+                            Plantas medicinales en el tratamiento de COVID – 19.
+                        </h3>
+                        <img src="imagenes/nutricion_cursos.png" alt="AI" class="imagen-secundaria-constancias">
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+        <!--Sobre mí-->
+        <section id="sobremi" class="sobremi">
+            <div class="sobremi-container">
+                <h1 class="nombre lang" data-es="Sobre mí" data-en="About me">Sobre mí</h1>
+                <div class="galeria-contenedor">
+                    <div class="texto-lateral">
+                        <!-- Aquí podrías colocar tu nombre, biografía o título -->
+                        <h1 class="lang" data-es="¿Por qué?" data-en="Why?">¿Por qué?</h1>
+                        <p class="lang"
+                            data-es="Creo que en cualquier ámbito, ya sea profesional, académico o personal, es indispensable conocer los hobbies e intereses de los demás. Esto permite conocer mejor a la persona, humaniza la situación y abre más puertas para una mayor confianza y empatía."
+                            data-en="I believe that in any context—professional, academic, or personal—it's essential to know others' hobbies and interests. It helps us understand people better, humanizes the situation, and opens the door to greater trust and empathy.">
+                            Creo que en cualquier ámbito, ya sea profesional, académico o personal, es indispensable conocer los hobbies e intereses de los demás. Esto permite conocer mejor a la persona, humaniza la situación y abre más puertas para una mayor confianza y empatía.
+                        </p>
+                         <p class="lang"
+                            data-es="Es por todo esto que, en esta sección 'Sobre Mí', te cuento brevemente algunas de mis pasiones e intereses:"
+                            data-en="That’s why, in this 'About Me' section, I’d like to briefly share some of my passions and interests:">
+                                Es por todo esto que, en esta sección <strong>'Sobre Mí'</strong>, te cuento brevemente algunas de mis pasiones e intereses:
+                        </p>
+
+                        <ul class="lista-intereses">
+                            <li class="lang"
+                                data-es="Tocar el violín (aún en aprendizaje)."
+                                data-en="Playing the violin (still learning).">
+                                Tocar el violín (aún en aprendizaje).
+                            </li>
+                            <li class="lang"
+                                data-es="Escuchar música 24/7, en especial del género indie."
+                                data-en="Listening to music 24/7, especially indie genre.">
+                                Escuchar música 24/7, en especial del género indie.
+                            </li>
+                            <li class="lang"
+                                data-es="Dar largas caminatas."
+                                data-en="Going on long walks.">
+                                Dar largas caminatas.
+                            </li>
+                            <li class="lang"
+                                data-es="Senderismo (aún en marcha)."
+                                data-en="Hiking (still a work in progress).">
+                                Senderismo (aún en marcha).
+                            </li>
+                            <li class="lang"
+                                data-es="Fotografía."
+                                data-en="Photography.">
+                                Fotografía.
+                            </li>
+                            <li class="lang"
+                                data-es="Dibujar y pintar (al papel me sale mejor)."
+                                data-en="Drawing and painting (it turns out better on paper).">
+                                Dibujar y pintar (al papel me sale mejor).
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="galeria-imagenes">
+                        <img src="imagenes/Senderismo.jpg" alt="UNAM" class="img grande-horizontal" />
+                        <div class="mascara-fotografia">
+                            <img src="Imagenes/Fotografia.jpg" alt="Imagen de perfil">
+                        </div> 
+                        <img src="imagenes/Dibujo.jpg" alt="Gym mirror" class="img" />
+                        <div class="mascara-violin">
+                            <img src="Imagenes/Violin.jpg" alt="Imagen de perfil">
+                        </div> 
+                        <div class="mascara-musica">
+                            <img src="Imagenes/musica.jpg" alt="Imagen de perfil">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-social">
+                <span class="lang" data-es="Sígueme:" data-en="Follow me:">Sígueme:</span>
+                <a href="https://www.facebook.com/brayan.santosarroyo.7/" target="_blank"><i class="ri-facebook-fill"></i></a>
+                <a href="https://www.instagram.com/brayansar2605/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.youtube.com/@saludactivaofficial" target="_blank"><i class="ri-youtube-fill"></i></a>
+                <a href="https://www.linkedin.com/in/brayan-santos-arroyo-900a78371/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/Brayan26Sa?fbclid=IwY2xjawLLGUVleHRuA2FlbQIxMABicmlkETFPMk5UbkJWOUt3MlJxUWpxAR4AERWCx-9_qvFEDhcIdKNparNiEdkYUEY4faoISAtDkKub5NcdZWJYO6nqcw_aem_I0aw2fHmmFt34uoBlFgtFA" target="_blank"><i class="ri-github-fill"></i></a>
+            </div>
+
+            <div class="footer-logo">
+                <img src="imagenes/logo_secundario_pagina_web_profesional.png" alt="Logo SAB" />
+            </div>
+
+            <div class="footer-copy">
+                <p class="lang"
+                    data-es="Mi portafolio® 2025 | Creado con HTML, CSS Y JS"
+                    data-en="My portfolio® 2025 | Built with HTML, CSS & JS">
+                    Mi portafolio® 2025 | Creado con HTML, CSS Y JS
+                </p>
+            </div>
+        </footer>
+        <script type="module" src="logica.js"></script> 
+    </body>
+</html>
