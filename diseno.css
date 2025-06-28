@@ -625,11 +625,11 @@ a {
     width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
     height: 100%;
     object-fit: cover;
-    -webkit-mask-image: url('Imagenes/mascara_flor.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-image: url('mascara_flor.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
     -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
     -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
     -webkit-mask-position: center; /* Centra la máscara */
-    mask-image: url('Imagenes/mascara_flor.png'); /* Máscara para otros navegadores compatibles */
+    mask-image: url('mascara_flor.png'); /* Máscara para otros navegadores compatibles */
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -788,11 +788,11 @@ a {
     width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
     height: 100%;
     object-fit: cover;
-    -webkit-mask-image: url('Imagenes/mascara_montana.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-image: url('mascara_montana.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
     -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
     -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
     -webkit-mask-position: center; /* Centra la máscara */
-    mask-image: url('Imagenes/mascara_montana.png'); /* Máscara para otros navegadores compatibles */
+    mask-image: url('mascara_montana.png'); /* Máscara para otros navegadores compatibles */
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -834,11 +834,11 @@ a {
     width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
     height: 100%;
     object-fit: cover;
-    -webkit-mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-image: url('mascara_spinner.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
     -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
     -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
     -webkit-mask-position: center; /* Centra la máscara */
-    mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara para otros navegadores compatibles */
+    mask-image: url('mascara_spinner.png'); /* Máscara para otros navegadores compatibles */
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -995,11 +995,11 @@ a {
     width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
     height: 100%;
     object-fit: cover;
-    -webkit-mask-image: url('Imagenes/mascara_flor_dos.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-image: url('mascara_flor_dos.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
     -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
     -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
     -webkit-mask-position: center; /* Centra la máscara */
-    mask-image: url('Imagenes/mascara_flor_dos.png'); /* Máscara para otros navegadores compatibles */
+    mask-image: url('mascara_flor_dos.png'); /* Máscara para otros navegadores compatibles */
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -1018,11 +1018,11 @@ a {
     width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
     height: 100%;
     object-fit: cover;
-    -webkit-mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-image: url('mascara_spinner.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
     -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
     -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
     -webkit-mask-position: center; /* Centra la máscara */
-    mask-image: url('Imagenes/mascara_spinner.png'); /* Máscara para otros navegadores compatibles */
+    mask-image: url('mascara_spinner.png'); /* Máscara para otros navegadores compatibles */
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -1041,11 +1041,11 @@ a {
     width: 100%; /* Asegura que la imagen de perfil se ajuste al contenedor */
     height: 100%;
     object-fit: cover;
-    -webkit-mask-image: url('Imagenes/mascara_gota.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
+    -webkit-mask-image: url('mascara_gota.png'); /* Máscara en navegadores Webkit (Chrome, Safari, Edge) */
     -webkit-mask-size: cover; /* Ajusta la máscara al tamaño del contenedor */
     -webkit-mask-repeat: no-repeat; /* Evita repeticiones de la máscara */
     -webkit-mask-position: center; /* Centra la máscara */
-    mask-image: url('Imagenes/mascara_gota.png'); /* Máscara para otros navegadores compatibles */
+    mask-image: url('mascara_gota.png'); /* Máscara para otros navegadores compatibles */
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
